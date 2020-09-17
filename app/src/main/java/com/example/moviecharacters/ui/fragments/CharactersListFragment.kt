@@ -34,7 +34,6 @@ class CharactersListFragment : Fragment(R.layout.fragment_characters_list) {
                 charactersAdapter.submitData(it)
             }
         }
-
     }
 
     override fun onResume() {
@@ -44,7 +43,6 @@ class CharactersListFragment : Fragment(R.layout.fragment_characters_list) {
             val action =
                 CharactersListFragmentDirections.actionCharactersListToProfileFragment(character.id!!)
             findNavController().navigate(action)
-
         }
     }
 
